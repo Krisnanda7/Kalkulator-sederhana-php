@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e3effe;
+            text-align: center;
+            height: 100vh;
+            margin: 10px;
+        }
+        h1 {
+            margin-top: 30px;
+        }
+        .container {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+        form {
+            background-color: #3a4452;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px;
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        input[type="number"]{
+            width: 50%;
+            margin-top: 5px;
+            border: 1px;
+            border-radius: 5px;
+        }
+        .operator-label {
+            text-align: left;
+        }
+        input[type="radio"] {
+            margin: 10px;
+        }
+        input[type="submit"] {
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Kalkulator Sederhana Menggunakan PHP</h1>
+    <div class="container">
+    <form action="tambah.php">
+        <label for="bill">Masukan Bilangan Pertama
+        <input type="number" name="bil1">
+        </label>
+        <br>
+        <label for="bill2">Masukan Bilangan Kedua
+        <input type="number" name="bil2">
+        </label>
+        <br>
+
+         <label for="operator" class="operator-label">
+            <p>Pilih Operator Perhitungan</p>
+            <input type="radio" name="operator" value="+">+
+            <br>
+            <input type="radio" name="operator" value="-">-
+            <br>
+            <input type="radio" name="operator" value="*">x
+            <br>
+            <input type="radio" name="operator" value="/">/
+         </label>
+         <br>
+        <input type="submit" value="Hitung">
+    </form>
+    </div>
+    <footer><p>&copy; 2025 IDewa Gede Mas Bagus Krisnanda | Nim 2301020058.</a></footer>
+</body>
+</html>
